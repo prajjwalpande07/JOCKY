@@ -1,0 +1,317 @@
+{
+  "report_id": "RPT-1790620321930",
+  "case_id": "JCK-2026-001",
+  "title": "JSON Evidence Export",
+  "generated_at": "2026-09-28 18:32:01",
+  "investigator": "Dr. Sarah Chen, CISSP",
+  "report_type": "Evidence",
+  "case_details": {
+    "title": "APT-42 Lateral Movement & Suspicious Stager Investigation",
+    "target_system": "WIN-FORENSIC-01",
+    "platform": "windows",
+    "risk": "critical",
+    "status": "analyzing"
+  },
+  "evidence": [
+    {
+      "id": "EVD-2026-001",
+      "title": "Process Memory Artifact: suspicious.exe",
+      "source": "Process",
+      "sha256": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-2026-002",
+      "title": "Dropped Binary: C:\\Windows\\Temp\\stager_drop.dll",
+      "source": "File",
+      "sha256": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef0",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-2026-003",
+      "title": "PCAP Capture: Socket Session 185.220.101.4:443",
+      "source": "Network",
+      "sha256": "7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-2026-004",
+      "title": "Windows Security Event Log EVTX Fragment",
+      "source": "Log",
+      "sha256": "456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123",
+      "status": "requires_review"
+    },
+    {
+      "id": "EVD-2026-005",
+      "title": "System Metadata Snapshot & Volatile State",
+      "source": "System Metadata",
+      "sha256": "3456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef012",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-009",
+      "title": "Unauthorized Cron Job /etc/cron.d/sync #9",
+      "source": "File",
+      "sha256": "8e757c258783707a7272fedd921559f7570991f55b4545a9d21033c5bf40a5d9",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-014",
+      "title": "PowerShell Process Memory Dump #14",
+      "source": "Process",
+      "sha256": "bac298393fd1eb68bab85e057fe544ab2b6da6b698666676fdfe8f792dcd3069",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-018",
+      "title": "Host Master Boot Record & Registry Hive #18",
+      "source": "System Metadata",
+      "sha256": "90257201e91dee0aef33e04c8a88696774adbaea275f8c61f97be3a49b334cbf",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-030",
+      "title": "Sysmon Event Log Container (EVTX) #30",
+      "source": "Log",
+      "sha256": "27695a72232851544c7fb5c6e8f48ccd3813719879ccda64d8972e9d7902225b",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-032",
+      "title": "Sysmon Event Log Container (EVTX) #32",
+      "source": "Log",
+      "sha256": "3a7aaad1043aff4ca4dd51e5f9b877e16412c6e835d86442871836ad80ac25d2",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-039",
+      "title": "Sysmon Event Log Container (EVTX) #39",
+      "source": "Log",
+      "sha256": "b2fbf4284eeb0a025505e47133c3eab57861f22782f77f76ebdc94b044154970",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-043",
+      "title": "Kerberos Ticket Request Triage Export #43",
+      "source": "Network",
+      "sha256": "b9b5486962e5410e613ad94590478489424ebf1dafa887c0b1f9b61c7113aedd",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-044",
+      "title": "stager_drop.dll Binary Artifact #44",
+      "source": "File",
+      "sha256": "1035f79e540388e73148224cb0509d27d2357193526748760e778df4f1451820",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-046",
+      "title": "Host Master Boot Record & Registry Hive #46",
+      "source": "System Metadata",
+      "sha256": "c5d780cc8d6bddd0d7760ad7d056bc8c4fc18605fefeab3dda30572b3b75083e",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-058",
+      "title": "Sysmon Event Log Container (EVTX) #58",
+      "source": "Log",
+      "sha256": "ce7f33aa39eae4000743540b94b5243fbe97e363a6e1cbb8a6fe02d474ac878f",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-079",
+      "title": "Kerberos Ticket Request Triage Export #79",
+      "source": "Network",
+      "sha256": "81d5e3e37a63e2bc04cabbecf63579ee73e6e69381cbb60fa783aeb34e91fd09",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-085",
+      "title": "Unauthorized Cron Job /etc/cron.d/sync #85",
+      "source": "File",
+      "sha256": "897927a31cb4f1e2fd41ae599d1b222a66c41c31c640a853c281f24805c28612",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-090",
+      "title": "PowerShell Process Memory Dump #90",
+      "source": "Process",
+      "sha256": "7da486d5a98f1c4daa9414fd8f14929f5b972653c808b8879caf1e6609f51052",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-097",
+      "title": "Unauthorized Cron Job /etc/cron.d/sync #97",
+      "source": "File",
+      "sha256": "3ae558df1f3dfde1320184193e3619cd970c524ed387addcce7fb8ad975273e1",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-100",
+      "title": "stager_drop.dll Binary Artifact #100",
+      "source": "File",
+      "sha256": "aa7697ebaf035889cec337b78e8b01f68648e13d91f00a7e995f7a8b9ddea650",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-102",
+      "title": "Unauthorized Cron Job /etc/cron.d/sync #102",
+      "source": "File",
+      "sha256": "a467b68ba0476d0956bdd1400b72c9275b27846cc755f22528b9d26409069cfd",
+      "status": "verified"
+    },
+    {
+      "id": "EVD-104",
+      "title": "PowerShell Process Memory Dump #104",
+      "source": "Process",
+      "sha256": "c013f0975a7e823ee7bf4f5cd724b04caeeeef8f9d6ed6ef3e4fe3ac573b3483",
+      "status": "verified"
+    }
+  ],
+  "findings": [
+    {
+      "id": "FND-2026-01",
+      "title": "Potentially Suspicious Process Execution in Temporary Directory",
+      "severity": "critical",
+      "confidence": 94,
+      "rule": "Untrusted Temp Directory Binary Execution"
+    },
+    {
+      "id": "FND-2026-02",
+      "title": "Obfuscated PowerShell Invocation with Hidden Window Flag",
+      "severity": "high",
+      "confidence": 89,
+      "rule": "Base64 Encoded Script Block Execution"
+    },
+    {
+      "id": "FND-2026-03",
+      "title": "Anomalous Egress TLS Beacon to Anonymizing Exit Relay",
+      "severity": "high",
+      "confidence": 87,
+      "rule": "Egress Beacon to Known Tor / Proxy Exit"
+    },
+    {
+      "id": "FND-2026-04",
+      "title": "High Entropy Dynamic Library Dropped in System Location",
+      "severity": "medium",
+      "confidence": 78,
+      "rule": "Suspicious High Entropy DLL Creation"
+    },
+    {
+      "id": "FND-2026-05",
+      "title": "New Service Registration Event from Unregistered Provider",
+      "severity": "low",
+      "confidence": 72,
+      "rule": "Event ID 7045 Service Installation"
+    },
+    {
+      "id": "FND-013",
+      "title": "Outbound TLS Beacon to Tor Exit Relay (Instance #13)",
+      "severity": "critical",
+      "confidence": 96,
+      "rule": "Untrusted Egress IP"
+    },
+    {
+      "id": "FND-017",
+      "title": "Base64 Encoded PowerShell Command Execution (Instance #17)",
+      "severity": "critical",
+      "confidence": 94,
+      "rule": "Suspicious Execution Lineage"
+    },
+    {
+      "id": "FND-023",
+      "title": "Pass-the-Hash NTLM Relay Authentication Artifact (Instance #23)",
+      "severity": "critical",
+      "confidence": 95,
+      "rule": "Lateral Movement Artifact"
+    },
+    {
+      "id": "FND-032",
+      "title": "Anomalous High-Entropy DLL Created in %TEMP% (Instance #32)",
+      "severity": "high",
+      "confidence": 88,
+      "rule": "Binary Dropper Detection"
+    },
+    {
+      "id": "FND-033",
+      "title": "Anomalous High-Entropy DLL Created in %TEMP% (Instance #33)",
+      "severity": "high",
+      "confidence": 88,
+      "rule": "Binary Dropper Detection"
+    }
+  ],
+  "timeline": [
+    {
+      "timestamp": "2026-09-28 10:19:42",
+      "title": "Obfuscated PowerShell Process Started",
+      "category": "process",
+      "severity": "high"
+    },
+    {
+      "timestamp": "2026-09-28 10:19:48",
+      "title": "Remote Web Payload Download Connection",
+      "category": "network",
+      "severity": "high"
+    },
+    {
+      "timestamp": "2026-09-28 10:20:10",
+      "title": "File Created: stager_drop.dll",
+      "category": "file",
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2026-09-28 10:20:18",
+      "title": "Service Registration Event (Event ID 7045)",
+      "category": "log",
+      "severity": "high"
+    },
+    {
+      "timestamp": "2026-09-28 10:21:04",
+      "title": "Suspicious Process Started: suspicious.exe",
+      "category": "process",
+      "severity": "critical"
+    },
+    {
+      "timestamp": "2026-09-28 10:21:15",
+      "title": "Network Connection to C2 Relay Node",
+      "category": "network",
+      "severity": "critical"
+    },
+    {
+      "timestamp": "2026-09-28 10:21:19",
+      "title": "Security Log Event Generated",
+      "category": "log",
+      "severity": "critical"
+    },
+    {
+      "timestamp": "2026-09-28 10:21:32",
+      "title": "Suspicious Indicator: Anomaly Rule Triggered",
+      "category": "finding",
+      "severity": "critical"
+    },
+    {
+      "timestamp": "2026-09-28 14:31:45",
+      "title": "Telemetry Checkpoint 15",
+      "category": "process",
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2026-09-28 14:01:45",
+      "title": "Telemetry Checkpoint 17",
+      "category": "log",
+      "severity": "medium"
+    },
+    {
+      "timestamp": "2026-09-28 12:46:45",
+      "title": "Telemetry Checkpoint 22",
+      "category": "log",
+      "severity": "low"
+    },
+    {
+      "timestamp": "2026-09-28 10:46:45",
+      "title": "Telemetry Checkpoint 30",
+      "category": "log",
+      "severity": "medium"
+    }
+  ]
+}
